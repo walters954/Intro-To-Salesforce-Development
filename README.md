@@ -1,6 +1,44 @@
-# Salesforce DX Project: Next Steps
+# Introduction to Salesforce Development
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Welcome to the beginner Salesforce developer webinar: **Introduction to Salesforce Development**. This project contains examples and resources to help you get started with Salesforce development.
+
+## Key Concepts and Examples
+
+This project includes several Apex classes and triggers that demonstrate fundamental Salesforce development concepts:
+
+### Apex Classes
+
+1. **BasicConcepts.cls**
+   - Demonstrates fundamental programming concepts such as variables, data types, flow control, loops, and methods.
+   - Includes examples of simple calculations, string operations, and collection handling.
+
+2. **DataHelper.cls**
+   - Shows how to work with Salesforce data using SOQL queries and DML operations.
+   - Examples include finding contacts by name, creating new accounts, updating contact titles, and deleting old leads.
+
+3. **CustomUIController.cls**
+   - Demonstrates the controller side of custom UI development.
+   - Includes methods for retrieving recent accounts, getting account details, saving accounts, searching accounts, and logging errors.
+
+4. **AccountTriggerHelper.cls**
+   - Contains business logic for handling Account triggers.
+   - Includes methods for processing accounts before and after insert/update, creating follow-up tasks, and generating opportunities for hot accounts.
+
+### Apex Triggers
+
+1. **AccountTrigger.trigger**
+   - A basic trigger that fires when Account records are modified.
+   - Delegates logic to the `AccountTriggerHelper` class for handling different trigger contexts (before/after insert/update).
+
+### SOQL Queries
+
+- **account.soql**
+  - Example query to retrieve Account records with their IDs and Names.
+
+### Anonymous Apex
+
+- **hello.apex**
+  - Demonstrates how to execute anonymous Apex code for debugging and testing purposes.
 
 ## How Do You Plan to Deploy Your Changes?
 
